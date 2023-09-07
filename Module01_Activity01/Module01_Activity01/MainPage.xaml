@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module01_Activity01.MainPage">
+
+    <StackLayout>
+        <Label Text="View-Specific Resource Dictionaries"
+               FontSize="20"
+               TextColor="Black"
+               HorizontalOptions="CenterAndExpand"/>
+        <Button Clicked="OpenPage1">
+            <Button.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Text" Value="Page 1"/>
+                    <Setter Property="BackgroundColor" Value="Red"/>
+                    <Setter Property="FontSize" Value="25"/>
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Clicked="OpenPage2">
+            <Button.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Text" Value="Page 2"/>
+                    <Setter Property="BackgroundColor" Value="Green"/>
+                    <Setter Property="FontSize" Value="25"/>
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Clicked="OpenPage3">
+            <Button.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Text" Value="Page 3"/>
+                    <Setter Property="BackgroundColor" Value=" Blue"/>
+                    <Setter Property="FontSize" Value="25"/>
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </StackLayout>
+
+</ContentPage>
